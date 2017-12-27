@@ -4,33 +4,6 @@ import numpy as np
 import pyautogui
 import os
 
-# #Grab Window
-# im=ImageGrab.grab(bbox=(10,10,510,510)) # X1,Y1,X2,Y2
-# #Convert to numpy array
-# imnp=np.array(im)
-# #operate with cv2
-# gray=cv2.cvtColor(imnp,cv2.COLOR_BGR2GRAY)
-# cv2.imshow('frame',gray)
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
-# #cv2 pattern match
-# mainim=cv2.imread('1942.jpg')
-# gray_main=cv2.cvtColor(mainim,cv2.COLOR_BGR2GRAY)
-# template=cv2.imread('1942_sprite.jpg')
-# gray_template=cv2.cvtColor(template,cv2.COLOR_BGR2GRAY)
-# w,h=gray_template.shape[::-1]
-#
-# res=cv2.matchTemplate(gray_main,gray_template,cv2.TM_CCOEFF_NORMED)
-# threshold=0.9
-# loc=np.where(res>=threshold)
-# print(loc)
-# for pt in zip(*loc[::-1]):
-#     cv2.rectangle(mainim,pt,(pt[0]+w,pt[1]+h),(0,255,255),2)
-# print(pt[0],pt[1])
-#
-# cv2.imshow('detected',mainim)
-# cv2.waitKey(0)
-# cv2.destroyAllWindows()
 dir_path = os.path.dirname(os.path.realpath(__file__))
 im=ImageGrab.grab() # X1,Y1,X2,Y2
 imnp=np.array(im)
