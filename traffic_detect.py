@@ -1,10 +1,16 @@
 import pyscreenshot as ImageGrab
 import cv2
 import numpy as np
+<<<<<<< HEAD
 import os
 
 # #
 # cv2.destroyAllWindows()
+=======
+import pyautogui
+import os
+
+>>>>>>> bd27fc0239832229d45f7d411d1fcac2fe294cb3
 dir_path = os.path.dirname(os.path.realpath(__file__))
 im=ImageGrab.grab() # X1,Y1,X2,Y2
 imnp=np.array(im)
@@ -34,7 +40,11 @@ stop=cv2.imread(stopl)
 gray_stop=cv2.cvtColor(stop,cv2.COLOR_BGR2GRAY)
 ret,bin_stop = cv2.threshold(gray_stop,60,255,cv2.THRESH_BINARY)
 
+<<<<<<< HEAD
 serpantinel=dir_path+'/templates/serpantine.png'
+=======
+serpantinel=dir_path+'/templates/serpantine2.png'
+>>>>>>> bd27fc0239832229d45f7d411d1fcac2fe294cb3
 serpantine=cv2.imread(serpantinel)
 gray_serpantine=cv2.cvtColor(serpantine,cv2.COLOR_BGR2GRAY)
 ret,bin_serpantine = cv2.threshold(gray_serpantine,60,255,cv2.THRESH_BINARY)
