@@ -1,16 +1,7 @@
 import pyscreenshot as ImageGrab
 import cv2
 import numpy as np
-<<<<<<< HEAD
 import os
-
-# #
-# cv2.destroyAllWindows()
-=======
-import pyautogui
-import os
-
->>>>>>> bd27fc0239832229d45f7d411d1fcac2fe294cb3
 dir_path = os.path.dirname(os.path.realpath(__file__))
 im=ImageGrab.grab() # X1,Y1,X2,Y2
 imnp=np.array(im)
